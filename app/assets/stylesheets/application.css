@@ -13,3 +13,94 @@
  *= require_tree .
  *= require_self
  */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+main{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.flash{
+	margin: 33px;
+	font-size: 13px;
+	color: #77BF3F;
+}
+
+h1{
+	margin: 30px 0 10px;
+	font-size: 1.5em;
+}
+
+span{
+	font-weight: bold;
+}
+
+/*main*/
+.books-table{
+	width: 100%;
+	margin: 30px 0;
+	border-spacing: 2px;
+	font-size: 13px;
+}
+
+th{
+	padding-bottom: 5px;
+}
+
+.books-title{
+	width: 30%;
+}
+.books-body{
+	width: 45%;
+}
+.action{
+	width: 25%;
+}
+
+/*top*/
+.top-text{
+	margin: 33px;
+	font-size: 13px;
+}
+.headline{
+	margin-bottom: 33px;
+}
+
+/*create*/
+h2{
+	font-size: 1em;
+}
+
+.new{
+	padding: 15px 0 3px;
+}
+
+/*show*/
+.show-main{
+	margin: 33px;
+	font-size: 13px;
+}
+
+.show-title, .show-body{
+	margin: 0 0 33px 33px;
+}
+
+/*edit*/
+.edit-main{
+	margin: 33px;
+}
+
+.edit{
+	padding: 15px 0 3px;
+}
+
+.move{
+	padding: 20px 0;
+}
+
