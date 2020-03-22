@@ -1,6 +1,11 @@
 <div class="edit-main">
+
 	<h2>Editing Book</h2>
+
 	<%= form_for(@book) do |f| %>
+	<!-- エラー表示 -->
+	<%= render 'layouts/error_messages', model: f.object %>
+	<!-- エラー表示 -->
 		<p class="edit">Title</p>
 		<%= f.text_field :title %>
 		<p class="edit">Body</p>

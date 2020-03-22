@@ -19,6 +19,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 13px;
 }
 
 main{
@@ -28,25 +29,38 @@ main{
 
 .flash{
 	margin: 33px;
-	font-size: 13px;
 	color: #77BF3F;
 }
 
 h1{
 	margin: 30px 0 10px;
-	font-size: 1.5em;
+	font-size: 2em;
 }
 
 span{
 	font-weight: bold;
 }
 
+.move{
+	padding: 20px 0;
+}
+
+
+/*top*/
+.top-text{
+	margin: 33px;
+}
+
+.headline{
+	margin-bottom: 33px;
+}
+
+
 /*main*/
 .books-table{
 	width: 100%;
 	margin: 30px 0;
 	border-spacing: 2px;
-	font-size: 13px;
 }
 
 th{
@@ -63,18 +77,10 @@ th{
 	width: 25%;
 }
 
-/*top*/
-.top-text{
-	margin: 33px;
-	font-size: 13px;
-}
-.headline{
-	margin-bottom: 33px;
-}
 
 /*create*/
 h2{
-	font-size: 1em;
+	font-size: 1.5em;
 }
 
 .new{
@@ -84,7 +90,6 @@ h2{
 /*show*/
 .show-main{
 	margin: 33px;
-	font-size: 13px;
 }
 
 .show-title, .show-body{
@@ -100,7 +105,4 @@ h2{
 	padding: 15px 0 3px;
 }
 
-.move{
-	padding: 20px 0;
-}
 

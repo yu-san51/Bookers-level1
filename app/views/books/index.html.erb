@@ -14,7 +14,6 @@
 			</thead>
 			<tbody>
 			    <% @books.each do |book| %>
-
 					<tr>
 						<td><%= book.title %></td>
 						<td><%= book.body %></td>
@@ -23,35 +22,22 @@
 						<td><%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm"=>"Are you sure?"%></td>
 					</tr>
 				<% end %>
-
 			</tbody>
 		</table>
 
+
 	<div class="new-book">
 		<h2>New book</h2>
-
-
 			<%= form_for(@book) do |f| %>
-			<% if @book.errors.any? %>
-			  <div id="error_explanation">
-			    <h2><%= @product.errors.count %>件のエラーがあります。</h2>
-
-			    <ul>
-			    <% @book.errors.full_messages.each do |msg| %>
-			      <li><%= msg %></li>
-			    <% end %>
-			    </ul>
-			  </div>
-			<% end %>
+			<!-- エラー表示 -->
+			<%= render 'layouts/error_messages', model: f.object %>
+			<!-- /エラー表示 -->
 
 				<p class="new">title</p>
 					<%= f.text_field :title %>
-
 				<p class="new">body</p>
 					<%= f.text_area :body %>
-
 				<p class="new"><%= f.submit "Create Book" %></p>
-
 			<% end %>
 
 	</div>
