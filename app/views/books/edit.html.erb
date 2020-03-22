@@ -4,7 +4,7 @@
 
 	<%= form_for(@book) do |f| %>
 	<!-- エラー表示 -->
-	<%= render 'layouts/error_messages', model: f.object %>
+	<%= render 'layouts/error-messages', model: @book %>
 	<!-- エラー表示 -->
 		<p class="edit">Title</p>
 		<%= f.text_field :title %>
